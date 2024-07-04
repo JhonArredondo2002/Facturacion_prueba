@@ -1,0 +1,12 @@
+Pasos para el uso de la aplicación
+
+-1. Primero se abre y se ejecuta el archivo “Aplicación.py”.
+-2. Después se ingresan los campos correspondientes y se selecciona una factura oprimiendo un botón.
+En el menú de arriba se encuentra una tercera factura.
+La aplicación funciona con unos diseños hechos en HTML, usando algunas librerías de Python y una librería externa, esto con el fin de generar los pdf en base a los HTML.
+Los comandos para instalar las librerías de Python son:
+- pip3 install jinja2
+- pip3 install pdfkit
+
+El link para instalar la librería externa es el siguiente:
+https://wkhtmltopdf.org/downloads.html 

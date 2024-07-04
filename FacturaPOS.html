@@ -1,0 +1,33 @@
+
+<style>
+    body{
+        width: 500px;
+    }
+    td{
+        text-align: center;
+        border:solid 1px;
+        padding: 10px;
+        border: 0;
+    }
+</style>
+
+<body>
+<p style="text-align: center;"><strong>Transportadores de Ipiales S.A</strong><br /><strong>891200645-1</strong><br /><strong>Calle 17 15 - 40, Pasto - Nari&ntilde;o<br />Pasto - Tels: / 7210546<br />Autorizada el 2022-10-30 :<br />Prefijo POS del: 1740 al: 10000<br />Responsable de iva</strong></p>
+<hr />
+<p style="text-align: center;"><strong>Factura de venta: C0612970</strong></p>
+<p style="text-align: left; padding-left: 40px;"><strong>Fecha:&nbsp; &nbsp; &nbsp; &nbsp; {{fech_emi}}<br /></strong><strong>Cliente:&nbsp; &nbsp; &nbsp; {{adquiriente}}<br /></strong><strong>C.C / NIT:&nbsp; {{n_doc}}<br /></strong><strong>Direccion:&nbsp; {{direcc}}</strong></p>
+<hr />
+<table>
+    <tr>
+        <td><strong> Ct</strong></td>
+        <td><strong> Descripcion</strong></td>
+        <td><strong>valor</strong></td>
+    </tr>
+    {{productos}}
+</table>
+<hr />
+<p style="text-align: center;"><strong>Total:&nbsp; &nbsp; &nbsp; &nbsp;{{total}}</strong></p>
+<hr />
+<p style="text-align: left; padding-left: 40px;"><strong>Forma de pago<br />{{f_pag}}&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;{{v_pag}}</strong></p>
+<p style="text-align: left; padding-left: 40px;"><strong>Cambio&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;{{cambio}}</strong></p>
+</body>

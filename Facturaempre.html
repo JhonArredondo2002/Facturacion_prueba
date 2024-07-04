@@ -1,0 +1,64 @@
+<style>
+    *{
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 12;
+    }
+    td{
+        border:solid 1px;
+        padding: 10px;
+    }
+</style>
+
+<p style="text-align: center;">
+    <strong>Representaci&oacute;n Gr&aacute;fica</strong><br />
+    <strong>FACTURA ELECTR&Oacute;NICA DE VENTA C0612970</strong></p>
+<hr />
+<img src={{ruta_ima}} alt="" style="float:left ; height: 9em;">
+<p style="text-align: left; margin-left: 20em;"><strong>TRANSPORTADORES DE IPIALES S.A</strong><br />
+    <strong>NIT</strong>: 891200645-1<br /><strong>Direcci&oacute;n</strong>: CALLE 17 15 - 40, PASTO - NARIÑO<br />
+    Responsable de iva<br /><strong>Actividad Econ&oacute;mica Principal</strong>: 4921<br />
+    <strong>Correo</strong>: gerencia@transipialesvirtual.com<br /><strong>Tel&eacute;fono</strong>: 7210546</p>
+<p style="text-align: left;"><strong>Numero de factura:</strong><br /></p>
+    <p style="background-color: rgb(202, 195, 195);"><strong>No:    </strong>{{n_factur}}<br /></p>
+
+    <p><strong class="izquierda">Fecha de Emisi&oacute;n:</strong>  {{fech_emi}}&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+     <strong  style="text-align: right;">Fecha de Expedici&oacute;n:</strong>  {{fech_exp}}<br />
+     <strong>Fecha de Vencimiento:</strong>  {{fech_ven}}&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; <strong>Tipo de Operaci&oacute;n:</strong> {{t_op}}<br />
+     <strong>Forma de Pago:</strong>  {{f_pag}}<br /></p>
+     <p style="background-color: rgb(202, 195, 195);"><strong>Adquiriente:</strong>  {{adquiriente}} &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+        &emsp;<strong>Raz&oacute;n Social:</strong>  {{r_social}}<br /></p>
+     <p><strong>N&uacute;mero Documento:  </strong>{{n_doc}}&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; <strong>Pais: </strong> {{pais}}<br />
+     <strong>Departamento:  </strong> {{dep}}&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; <strong>Municipio</strong>:  {{mun}}<br />
+     <strong>Tipo de Contribuyente:</strong>  {{t_contr}}&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<strong> Correo:</strong>  {{correo}}<br />
+     <strong>Tel&eacute;fono:</strong>  {{telef}}&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<strong> Direcci&oacute;n:</strong>  {{direcc}}<br /></p>
+     <p style="background-color: rgb(202, 195, 195);"><strong>Informaci&oacute;n del Servicio de Transporte:</strong><br /></p>
+     <p><strong>Tipo:</strong> {{tip}}&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; <strong>Peso:</strong> {{peso}}<br />
+     <strong>Origen:</strong> {{origen}}&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<strong>Destino:</strong> {{destino}}&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; <strong>Fecha Probable:</strong> 
+     {{fech_prob}}<br /><strong>Sito Entrega</strong>: {{s_entreg}}<br /></p>
+     <p style="background-color: rgb(202, 195, 195);"><strong>Detalles de Productos</strong></p>
+     <table style="border:solid 1px; text-align: center;" cellspacing="0">
+        <tr >
+            <td>Nro</td>
+            <td>Guia</td>
+            <td>Descripcion</td>
+            <td>UM</td>
+            <td>Cantidad</td>
+            <td>Precio Unitario</td>
+            <td>Valor asegurado</td>
+            <td>Valor seguro</td>
+            <td>IVA 19%</td>
+            <td>ICA</td>
+            <td>INC</td>
+            <td>Total</td>
+        </tr>
+        {{productos}}
+     </table><br>
+     <p style="background-color: rgb(202, 195, 195);"><strong>Totales</strong><br>
+        <p>Moneda&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; COP</p>
+<hr />
+<p>Subtotal precio&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;{{subtprec}}<br />Valor seguro&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;{{valorseguro}}</p>
+<hr />
+<p>Total IVA&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;19%</p>
+<hr />
+<p>Total a pagar&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; {{total}}</p> <br>
+<p><strong>Notas:&nbsp; </strong>{{notas}}</p>
